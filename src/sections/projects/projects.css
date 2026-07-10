@@ -1,0 +1,48 @@
+.projects {
+  padding: 100px 0;
+
+  background: #f8f8fc;
+}
+
+.projects-container {
+  width: min(1200px, 90%);
+
+  margin: auto;
+}
+
+.projects-heading {
+  margin-bottom: 50px;
+}
+
+.projects-heading p {
+  margin-top: 18px;
+
+  max-width: 650px;
+
+  color: #666666;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+}
+
+.projects-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+
+  .projects {
+    padding: 70px 0;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
