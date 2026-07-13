@@ -1,0 +1,64 @@
+:root{
+
+/* Colors */
+
+--primary:#6366F1;
+--primary-dark:#4F46E5;
+
+--secondary:#06B6D4;
+
+--dark:#0F172A;
+
+--text:#1E293B;
+
+--text-light:#64748B;
+
+--white:#FFFFFF;
+
+--background:#F8FAFC;
+
+--card:#FFFFFF;
+
+--border:#E2E8F0;
+
+
+/* Font */
+
+--font-family:'Inter',sans-serif;
+
+
+/* Radius */
+
+--radius-sm:8px;
+--radius-md:12px;
+--radius-lg:20px;
+
+
+/* Shadow */
+
+--shadow-sm:0 2px 8px rgba(0,0,0,.08);
+
+--shadow-md:0 10px 30px rgba(0,0,0,.08);
+
+--shadow-lg:0 20px 60px rgba(0,0,0,.12);
+
+
+/* Container */
+
+--container:1200px;
+
+}
+
+[data-theme="dark"]{
+
+--background:#0f172a;
+
+--card:#1e293b;
+
+--text:#ffffff;
+
+--text-light:#cbd5e1;
+
+--border:#334155;
+
+}
