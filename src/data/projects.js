@@ -1,187 +1,256 @@
 const projects = [
   {
     id: 1,
-    slug: "business-website-development",
+    slug: "yourbulksms",
 
-    title: "Business Website Development",
+    title: "YourBulkSMS",
 
-    category: "Web Development",
+    category: "Web Application",
 
-    shortDescription:
-      "Responsive business websites with reusable sections, service pages, forms, sliders, and mobile-friendly layouts.",
+    image: "/projects/yourbulksms.png",
 
-    overview:
-      "I worked on developing and customizing business websites for different industries. The work included frontend development, responsive layouts, service pages, forms, sliders, content sections, and deployment-related tasks.",
+    live: "https://yourbulksms.com",
 
-    problem:
-      "Business websites often required design customization, responsive improvements, content restructuring, and fixes for inconsistent layouts across desktop and mobile devices.",
+    github: "",
 
-    solution:
-      "I created reusable website sections, improved responsive behavior, customized existing templates, fixed layout problems, and worked with live hosting environments to deploy and maintain the websites.",
+    featured: true,
 
     technologies: [
-      "HTML",
-      "CSS",
-      "JavaScript",
+      "React",
       "PHP",
-      "cPanel",
+      "API",
+      "MySQL",
     ],
 
+    shortDescription:
+      "Bulk SMS communication platform for businesses with messaging, OTP, WhatsApp, Voice SMS, and API integration.",
+
+    overview:
+      "Worked on UI development, responsive pages, API integration, landing pages, blogs, and frontend improvements.",
+
     responsibilities: [
-      "Responsive frontend development",
-      "Template customization",
-      "Form integration",
-      "Mobile layout improvements",
-      "Live website deployment",
-      "Website maintenance",
+      "Frontend Development",
+      "Responsive Design",
+      "Landing Pages",
+      "Blog Development",
+      "API Integration",
+      "UI Improvements",
     ],
   },
 
   {
     id: 2,
-    slug: "react-web-application",
+    slug: "eindore",
 
-    title: "React Web Application",
+    title: "eIndore",
 
-    category: "React Development",
+    category: "News Portal",
 
-    shortDescription:
-      "React interfaces using reusable components, dynamic data, state management, and responsive layouts.",
+    image: "/projects/eindore.png",
 
-    overview:
-      "I worked on React applications involving reusable components, dynamic data rendering, booking interfaces, dashboards, date and time selection, and responsive layouts.",
+    live: "https://eindore.com",
 
-    problem:
-      "The application required dynamic UI components that could react to changing data and user interactions without duplicating code.",
+    github: "",
 
-    solution:
-      "I used reusable React components, props, state management, event handling, conditional rendering, and array methods to build dynamic interfaces.",
+    featured: true,
 
     technologies: [
-      "React",
-      "JavaScript",
-      "CSS",
-      "REST API",
+      "WordPress",
+      "PHP",
+      "HTML/CSS",
+      "SEO",
     ],
 
+    shortDescription:
+      "Digital news portal covering Indore, Madhya Pradesh, and national news.",
+
+    overview:
+      "Worked on website management, SEO optimization, content publishing, page customization, and performance improvements.",
+
     responsibilities: [
-      "Reusable component development",
-      "State management",
-      "Dynamic data rendering",
-      "Form handling",
-      "Responsive UI",
-      "Debugging React errors",
+      "WordPress",
+      "Technical SEO",
+      "Content Management",
+      "Performance Optimization",
+      "Responsive Layout",
     ],
   },
 
   {
     id: 3,
-    slug: "wordpress-development",
+    slug: "shellpathology",
 
-    title: "WordPress Development",
+    title: "Shell Pathology",
 
-    category: "CMS Development",
+    category: "Business Website",
 
-    shortDescription:
-      "WordPress customization, forms, theme editing, plugins, performance, and hosting troubleshooting.",
+    image: "/projects/shellpathology.png",
 
-    overview:
-      "I have worked on WordPress website customization and maintenance, including themes, forms, plugins, hosting configuration, and troubleshooting.",
+    live: "http://shellpathology.com",
 
-    problem:
-      "Different websites had issues involving layout customization, plugin configuration, PHP compatibility, forms, caching, and hosting environments.",
+    github: "",
 
-    solution:
-      "I investigated issues from both the WordPress dashboard and hosting side, modifying themes, checking plugins, reviewing PHP versions, clearing caches, and troubleshooting server configuration.",
+    featured: true,
 
     technologies: [
-      "WordPress",
+      "HTML/CSS",
+      "JavaScript",
       "PHP",
-      "MySQL",
-      "cPanel",
     ],
 
+    shortDescription:
+      "Modern pathology laboratory website with premium UI and responsive pages.",
+
+    overview:
+      "Designed and customized the complete website layout, service sections, and responsive interface.",
+
     responsibilities: [
-      "Theme customization",
-      "Plugin configuration",
-      "Form setup",
-      "PHP troubleshooting",
-      "Hosting management",
-      "Website maintenance",
+      "UI Design",
+      "Responsive Development",
+      "HTML/CSS",
+      "JavaScript",
     ],
   },
 
   {
     id: 4,
-    slug: "seo-indexing-investigation",
+    slug: "smart-connect-associates",
 
-    title: "SEO Indexing Investigation",
+    title: "Smart Connect Associates",
 
-    category: "SEO & Server",
+    category: "Corporate Website",
 
-    shortDescription:
-      "Investigation of abnormal URL indexing, server logs, sitemaps, redirects, and Search Console issues.",
+    image: "/projects/smartconnectassociates.png",
 
-    overview:
-      "I investigated technical SEO problems where search engines discovered large numbers of unexpected URLs on websites with relatively few legitimate pages.",
+    live: "https://smartconnectassociates.in",
 
-    problem:
-      "Search engines were discovering and indexing unexpected URLs, creating indexing, crawl, and website quality concerns.",
+    github: "",
 
-    solution:
-      "I reviewed sitemap generation, server logs, redirect rules, suspicious URL patterns, Search Console reports, and website files to understand the source of the issue.",
+    featured: true,
 
     technologies: [
-      "Technical SEO",
-      "Google Search Console",
-      "Server Logs",
+      "HTML/CSS",
+      "JavaScript",
       "PHP",
-      "cPanel",
     ],
 
+    shortDescription:
+      "Corporate website showcasing company services, achievements, and clients.",
+
+    overview:
+      "Developed multiple pages, company profile sections, achievements, and responsive layouts.",
+
     responsibilities: [
-      "URL pattern investigation",
-      "Server log analysis",
-      "Sitemap review",
-      "Redirect investigation",
-      "Search Console analysis",
-      "Technical SEO troubleshooting",
+      "Frontend Development",
+      "Responsive Layout",
+      "Website Customization",
     ],
   },
 
   {
     id: 5,
-    slug: "crm-lead-integration",
+    slug: "merry-o-siyan-agro",
 
-    title: "CRM Lead Integration",
+    title: "Merry O Siyan Agro",
 
-    category: "API Integration",
+    category: "Business Website",
 
-    shortDescription:
-      "API-based lead flow for website forms, CRM processing, and automated assignment workflows.",
+    image: "/projects/merryosiyanagro.png",
 
-    overview:
-      "I worked with website lead flows and CRM integrations where form submissions needed to be sent to external systems through APIs.",
+    live: "https://merryosiyanagro.com",
 
-    problem:
-      "Website leads needed to move reliably from frontend forms into CRM systems for processing and assignment.",
+    github: "",
 
-    solution:
-      "I worked with REST APIs, JSON request structures, backend endpoints, and CRM workflow configuration to understand and implement the lead flow.",
+    featured: true,
 
     technologies: [
-      "REST API",
-      "JSON",
+      "HTML/CSS",
+      "JavaScript",
       "PHP",
-      "CRM",
     ],
 
+    shortDescription:
+      "Agriculture company website with product showcase and responsive business pages.",
+
+    overview:
+      "Customized templates, homepage sections, banners, products, and mobile responsiveness.",
+
     responsibilities: [
-      "API request structure",
-      "Form data handling",
-      "JSON payloads",
-      "CRM workflow understanding",
-      "Lead assignment flow",
+      "Template Customization",
+      "Responsive Design",
+      "Homepage Development",
+    ],
+  },
+
+  {
+    id: 6,
+    slug: "justnode",
+
+    title: "JustNode",
+
+    category: "Website Optimization",
+
+    image: "/projects/justnode.png",
+
+    live: "https://justnode.com",
+
+    github: "",
+
+    featured: true,
+
+    technologies: [
+      "HTML/CSS",
+      "SEO",
+      "cPanel",
+    ],
+
+    shortDescription:
+      "Technical SEO investigation and website optimization project.",
+
+    overview:
+      "Worked on sitemap generation, Google indexing issues, server logs, redirects, and hosting analysis.",
+
+    responsibilities: [
+      "Technical SEO",
+      "Server Analysis",
+      "Sitemap Generation",
+      "Performance",
+    ],
+  },
+
+  {
+    id: 7,
+    slug: "asp-infotech",
+
+    title: "ASP Infotech",
+
+    category: "Business Website",
+
+    image: "/projects/aspinfotech.png",
+
+    live: "https://aspinfotech.in/",
+
+    github: "",
+
+    featured: true,
+
+    technologies: [
+      "HTML/CSS",
+      "JavaScript",
+      "PHP",
+    ],
+
+    shortDescription:
+      "Business website with service pages, contact forms, and responsive design.",
+
+    overview:
+      "Developed multiple pages, contact forms, service layouts, and customized the business website.",
+
+    responsibilities: [
+      "Frontend Development",
+      "Responsive Design",
+      "Website Customization",
+      "Contact Forms",
     ],
   },
 ];

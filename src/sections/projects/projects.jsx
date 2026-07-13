@@ -1,47 +1,110 @@
+import { useState } from "react";
+
 import "./projects.css";
 
 import projects from "../../data/projects";
 
 import ProjectCard from "../../components/projectCard/projectCard";
+import SectionTitle from "../../components/SectionTitle/SectionTitle";
+import Container from "../../components/Container/Container";
+import Reveal from "../../components/Reveal/Reveal";
+
+import FeaturedProject from "../../components/FeaturedProject/FeaturedProject";
 
 function Projects() {
+  const [activeFilter, setActiveFilter] = useState("All");
+
+  const [search, setSearch] = useState("");
+
+  const filters = [
+    "All",
+    "React",
+    "WordPress",
+    "PHP",
+    "HTML/CSS",
+  ];
+
+const filteredProjects = projects.filter((project) => {
+
+  const matchesCategory =
+    activeFilter === "All" ||
+    project.technologies.includes(activeFilter);
+
+  const matchesSearch =
+    project.title
+      .toLowerCase()
+      .includes(search.toLowerCase()) ||
+
+    project.shortDescription
+      .toLowerCase()
+      .includes(search.toLowerCase());
+
+  return matchesCategory && matchesSearch;
+
+});
+
   return (
-    <section className="projects" id="projects">
+    <section className="projects section" id="projects">
+      <Container>
+        <Reveal>
 
-      <div className="projects-container">
+          <SectionTitle
+            subtitle="Featured Projects"
+            title="Real Projects I've Built"
+            description="A collection of real-world websites and applications I've worked on for businesses and clients."
+            center
+          />
 
-        <div className="section-heading projects-heading">
+          <FeaturedProject
+            project={projects.find((project) => project.featured)}
+          />
 
-          <span>My Work</span>
+          <div className="project-search">
 
-          <h2>
-            Projects and problems I've worked on
-          </h2>
-
-          <p>
-            A selection of development, WordPress,
-            API integration, hosting, and technical
-            SEO work.
-          </p>
-
-        </div>
-
-
-        <div className="projects-grid">
-
-          {projects.map((project) => (
-
-            <ProjectCard
-              key={project.id}
-              project={project}
+            <input
+              type="text"
+              placeholder="Search projects..."
+              value={search}
+              onChange={(event) => setSearch(event.target.value)}
             />
 
-          ))}
+          </div>
 
-        </div>
+          <div className="project-filters">
 
-      </div>
+            {filters.map((filter) => (
 
+              <button
+                key={filter}
+                className={
+                  activeFilter === filter
+                    ? "filter-btn active"
+                    : "filter-btn"
+                }
+                onClick={() => setActiveFilter(filter)}
+              >
+                {filter}
+              </button>
+
+            ))}
+
+          </div>
+
+          <div className="projects-grid">
+
+            {filteredProjects.map((project) => (
+
+              <ProjectCard
+                key={project.id}
+                project={project}
+              />
+
+            ))}
+
+          </div>
+
+        </Reveal>
+      </Container>
     </section>
   );
 }
